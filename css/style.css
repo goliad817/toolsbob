@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .bounce-top {
   display: block;
   animation: bounce-top 2s infinite both;
@@ -469,16 +470,16 @@ main .offers .see-more-box {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 main .offers .see-more-box .see-more-btn {
   background-color: #fed766;
   color: #272727;
   text-align: center;
+  max-width: 1100px;
   width: 90%;
-  max-width: 1200px;
   border: 4px solid #fed766;
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   padding: 0.6em 1.2em;
   text-align: center;
   text-transform: uppercase;
@@ -518,6 +519,41 @@ main .about-us__text {
   font-size: 1.4rem;
   text-align: center;
   padding: 8px 16px;
+}
+main .services__text-box {
+  border: 1px solid #696773;
+  list-style: none;
+  padding-left: 20px;
+}
+main .services__text-box h3 {
+  font-size: 24px;
+  text-align: left;
+  margin-left: 10%;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #272727;
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
+main .services__text-box p {
+  font-size: 1.6rem;
+  margin-top: 3%;
+  color: #272727;
+  margin-left: 10%;
+  margin-bottom: 3%;
+}
+main .services__text {
+  font-size: 1.8rem;
+  padding: 10px;
+  text-align: left;
+  text-indent: -10px;
+  color: #272727;
+}
+main .services__text::before {
+  content: "•";
+  color: #fed766;
+  font-size: 20px;
+  padding-left: 10%;
+  padding-right: 15px;
 }
 
 @media (max-width: 767px) {
@@ -586,6 +622,43 @@ main .about-us__text {
     padding: 0.4em 0.8em;
     width: 80%;
   }
+  main .services__text-box {
+    border: 1px solid #696773;
+    list-style: none;
+    padding-left: 20px;
+  }
+  main .services__text-box h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 5%;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #272727;
+    margin-bottom: 2%;
+    margin-top: 5%;
+  }
+  main .services__text-box p {
+    font-size: 1.2rem;
+    margin-top: 3%;
+    color: #272727;
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+  main .services__text {
+    font-size: 1.4rem;
+    padding: 10px;
+    padding-left: 0;
+    text-align: left;
+    text-indent: -10px;
+    color: #272727;
+    white-space: nowrap;
+  }
+  main .services__text::before {
+    content: "•";
+    color: #fed766;
+    font-size: 20px;
+    padding-left: 0%;
+    padding-right: 10px;
+  }
 }
 @media (max-width: 350px) {
   .header__text {
@@ -626,6 +699,9 @@ main .about-us__text {
     font-size: 1.3rem;
     padding: 0.4em 0.8em;
     width: 80%;
+  }
+  main .services__text {
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1088px) {
