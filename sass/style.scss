@@ -246,6 +246,7 @@ main {
 		font-family: $title-font;
 		margin-top: 15%;
 		margin-bottom: 5%;
+		
 		text-align: center;
 		color: $text-color;
 		text-transform: uppercase;
@@ -282,7 +283,7 @@ main {
 			border: 1px solid $secoundary;
 			border-radius: 25px;
 			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-			transition: transform 0.3s;
+			transition: 0.3s;
 			cursor: pointer;
 
 			&__img {
@@ -334,10 +335,10 @@ main {
 				padding: 0.5em 1em;
 				border-radius: 10px;
 				width: 60%;
-				transition: box-shadow background-color 0.3s;
+				box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+				transition:  .3s;
 				&:hover {
 					background-color: transparent;
-					box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 				}
 				i {
 					font-weight: bold;
@@ -407,6 +408,7 @@ main {
 	}
 	.services {
 		&__text-box {
+			background-color:$white2;
 			border: 1px solid $secoundary;
 			list-style: none;
 			padding-left: 20px;
@@ -469,7 +471,8 @@ main {
 		}
 		.q{
 			padding: 16px 0;
-			border-left:10px $white solid ;
+			border-left:10px $white3 solid ;
+			background-color: $white3;
 			cursor: pointer;
 			transition: border-left-color .3s;
 			&:hover{
@@ -493,6 +496,7 @@ main {
 			overflow: hidden;
 			height: 0;
 			padding: 0 16px 0 52px;
+			background-color: #bebebe;
 		}
 		.a-opened{
 			overflow: visible;
@@ -504,7 +508,41 @@ main {
 		}
 	}
 }
-
+.footer{
+	position: relative;
+	margin-top: 10%;
+	background-color: #ccc;
+	&__logo{
+		width: 40%;
+		height: 90%;
+	}
+	&__contact{
+		position: absolute;
+		top: 30%;
+		left: 60%;
+		color: $text-color;
+		p{
+			font-size: 2.2rem;
+		}
+		.phone-number{
+			margin-top: 20%;
+		}
+		h3{
+			font-size: 4.2rem;
+			margin-bottom: 20%;
+		}
+	}
+	&__bottom{
+		margin-top: 5%;
+		background-color: #bbb;
+		p{
+			font-size: 1.6rem;
+			text-align: center;
+			padding-bottom: 1em;
+			padding-top: 1em;
+		}
+	}
+}
 // telefon
 
 @media (max-width: 767px) {
@@ -667,6 +705,7 @@ main {
 					font-size: 1.3rem;
 					padding: 0.4em 0.8em;
 					width: 80%;
+					font-weight: bold;
 				}
 			}
 		}

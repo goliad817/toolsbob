@@ -401,7 +401,7 @@ main .offers .offers-box {
   border: 1px solid #696773;
   border-radius: 25px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 main .offers .offers-box__img {
@@ -454,11 +454,11 @@ main .offers .offers-box__btn {
   padding: 0.5em 1em;
   border-radius: 10px;
   width: 60%;
-  transition: box-shadow background-color 0.3s;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
 }
 main .offers .offers-box__btn:hover {
   background-color: transparent;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 }
 main .offers .offers-box__btn i {
   font-weight: bold;
@@ -521,6 +521,7 @@ main .about-us__text {
   padding: 8px 16px;
 }
 main .services__text-box {
+  background-color: #ececec;
   border: 1px solid #696773;
   list-style: none;
   padding-left: 20px;
@@ -579,7 +580,8 @@ main .faq__dropdown span {
 }
 main .faq .q {
   padding: 16px 0;
-  border-left: 10px #eff1f3 solid;
+  border-left: 10px #cecdcd solid;
+  background-color: #cecdcd;
   cursor: pointer;
   transition: border-left-color 0.3s;
 }
@@ -603,6 +605,7 @@ main .faq .a {
   overflow: hidden;
   height: 0;
   padding: 0 16px 0 52px;
+  background-color: #bebebe;
 }
 main .faq .a-opened {
   overflow: visible;
@@ -611,6 +614,42 @@ main .faq .a-opened {
 }
 main .faq .arrow-rotated {
   transform: rotate(90deg);
+}
+
+.footer {
+  position: relative;
+  margin-top: 10%;
+  background-color: #ccc;
+}
+.footer__logo {
+  width: 40%;
+  height: 90%;
+}
+.footer__contact {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  color: #272727;
+}
+.footer__contact p {
+  font-size: 2.2rem;
+}
+.footer__contact .phone-number {
+  margin-top: 20%;
+}
+.footer__contact h3 {
+  font-size: 4.2rem;
+  margin-bottom: 20%;
+}
+.footer__bottom {
+  margin-top: 5%;
+  background-color: #bbb;
+}
+.footer__bottom p {
+  font-size: 1.6rem;
+  text-align: center;
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 @media (max-width: 767px) {
@@ -756,6 +795,7 @@ main .faq .arrow-rotated {
     font-size: 1.3rem;
     padding: 0.4em 0.8em;
     width: 80%;
+    font-weight: bold;
   }
   main .services__text {
     font-size: 1.2rem;
