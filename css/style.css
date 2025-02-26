@@ -361,6 +361,10 @@ main .section-title .title-underline {
   border-radius: 10px;
   background-color: #fed766;
 }
+main .offers a {
+  text-decoration: none;
+  color: #272727;
+}
 main .offers .wrapper {
   overflow-y: hidden;
   display: flex;

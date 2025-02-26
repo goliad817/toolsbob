@@ -244,6 +244,10 @@ main {
 		}
 	}
 	.offers {
+		a{
+			text-decoration: none;
+			color: $text-color;
+		}
 		.wrapper {
 			overflow-y: hidden;
 			display: flex;
@@ -262,7 +266,7 @@ main {
 			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 			transition: 0.3s;
 			cursor: pointer;
-
+			
 			&__img {
 				display: flex;
 				justify-content: center;
