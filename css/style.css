@@ -631,7 +631,7 @@ main .faq .arrow-rotated {
 
 @media (max-width: 767px) {
   .nav {
-    height: 60px;
+    height: 63px;
   }
   .nav__box {
     display: flex;
@@ -654,7 +654,7 @@ main .faq .arrow-rotated {
   }
   .nav__logo {
     z-index: 10000;
-    margin-bottom: 2em;
+    margin-bottom: 2.1em;
     font-size: 2.6rem;
   }
   .nav__link {
@@ -670,11 +670,15 @@ main .faq .arrow-rotated {
     text-wrap: nowrap;
   }
   .nav__link--btn {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
   }
   main .offers .wrapper {
     gap: 12px;
+  }
+  main .offers a {
+    display: flex;
+    flex-direction: row;
   }
   main .offers .offers-box {
     width: calc(50% - 10px);

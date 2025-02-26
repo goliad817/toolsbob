@@ -522,7 +522,7 @@ main {
 
 @media (max-width: 767px) {
 	.nav {
-		height: 60px;
+		height: 63px;
 		&__box {
 			display: flex;
 			flex-direction: column;
@@ -546,7 +546,8 @@ main {
 
 		&__logo {
 			z-index: 10000;
-			margin-bottom: 2em;
+			margin-bottom: 2.1em;
+			
 			font-size: 2.6rem;
 		}
 
@@ -563,7 +564,7 @@ main {
 			text-wrap: nowrap;
 		}
 		&__link--btn {
-			font-size: 1.2rem;
+			font-size: 1.3rem;
 			font-weight: bold;
 		}
 	}
@@ -572,10 +573,15 @@ main {
 			.wrapper {
 				gap: 12px;
 			}
+			a{
+				display: flex;
+				flex-direction: row;
+			}
 			.offers-box {
 				width: calc(50% - 10px); // Dwie kolumny z odstępem
 				max-width: 180px; // Dla bezpieczeństwa
 				height: 300px;
+				
 				&__img {
 					height: 150px;
 				}
