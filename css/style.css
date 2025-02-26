@@ -291,30 +291,6 @@ body {
   margin-top: 1.4em;
   margin-bottom: 3em;
 }
-.header .text-pc {
-  position: absolute;
-  left: 40%;
-  transform: translateX(-50%);
-  display: none;
-  align-items: flex-start;
-  height: 80%;
-}
-.header .text-pc h1 {
-  font-size: 5.4rem;
-  margin-bottom: 0.6em;
-}
-.header .text-pc p {
-  margin-top: 0.2em;
-  font-size: 1.8rem;
-}
-.header .text-pc .header__btn {
-  top: 72%;
-}
-.header .text-pc .aboutus-cta {
-  top: 72%;
-  left: 240px;
-  z-index: 1000;
-}
 .header__btn {
   position: absolute;
   top: 88%;
@@ -521,7 +497,6 @@ main .about-us__text {
   padding: 8px 16px;
 }
 main .services__text-box {
-  background-color: #ececec;
   border: 1px solid #696773;
   list-style: none;
   padding-left: 20px;
@@ -580,8 +555,6 @@ main .faq__dropdown span {
 }
 main .faq .q {
   padding: 16px 0;
-  border-left: 10px #cecdcd solid;
-  background-color: #cecdcd;
   cursor: pointer;
   transition: border-left-color 0.3s;
 }
@@ -605,7 +578,7 @@ main .faq .a {
   overflow: hidden;
   height: 0;
   padding: 0 16px 0 52px;
-  background-color: #bebebe;
+  background-color: #e7e9eb;
 }
 main .faq .a-opened {
   overflow: visible;
@@ -755,6 +728,17 @@ main .faq .arrow-rotated {
     padding-left: 0%;
     padding-right: 10px;
   }
+  .footer__contact {
+    top: 0;
+  }
+  .footer__contact h3 {
+    font-size: 2.4rem;
+    margin-bottom: 3%;
+  }
+  .footer__contact p {
+    font-size: 1.4rem;
+    margin-top: 5%;
+  }
 }
 @media (max-width: 350px) {
   .header__text {
@@ -802,83 +786,56 @@ main .faq .arrow-rotated {
   }
 }
 @media (min-width: 768px) and (max-width: 1088px) {
-  .nav__box {
+  .burger-btn {
+    display: none;
+  }
+  .nav .nav__box {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 1em 0;
-    position: fixed;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
-  }
-  .nav__box.active {
-    transform: translateY(0);
-  }
-  .nav__box.active__link {
-    opacity: 1;
   }
   .nav__logo {
-    z-index: 10000;
-    margin-bottom: 1.2em;
-    font-size: 2.7rem;
+    margin-top: 0;
+  }
+  .nav__logo img {
+    height: 40px;
   }
   .nav__link {
-    font-size: 1.6rem;
-    opacity: 0;
+    font-size: 1.4rem;
   }
-  .nav__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 1em 0;
-    position: fixed;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
-  }
-  .nav__box.active {
-    transform: translateY(0);
-  }
-  .nav__box.active .nav__link {
-    opacity: 1;
-  }
-  .nav__logo {
-    z-index: 10000;
-    margin-bottom: 1.2em;
-    font-size: 2.7rem;
-  }
-  .nav__link {
-    font-size: 1.6rem;
-    opacity: 0;
+  .nav__logo img {
+    width: 160px;
   }
   .nav__link--btn {
     font-size: 1.2rem;
-    padding: 0.4em 0.8em;
-    text-align: center;
-    border-radius: 10px;
   }
-  .nav__btn-box {
+  .header__bg {
+    height: 70vh;
+  }
+  .header__bg-shadow {
+    height: 70vh;
+  }
+  .header__text {
     position: absolute;
-    justify-content: center;
-    bottom: 10px;
-    left: 50%;
+    left: 40%;
     transform: translateX(-50%);
-    text-wrap: nowrap;
+    display: flex;
+    align-items: flex-start;
+    height: 80%;
   }
-  .nav__link--btn {
-    font-size: 1.2rem;
-    padding: 0.4em 0.8em;
-    text-align: center;
-    border-radius: 10px;
+  .header__text h1 {
+    font-size: 5.4rem;
+    margin-bottom: 0.6em;
+  }
+  .header__text p {
+    margin-top: 0.2em;
+    font-size: 1.8rem;
+  }
+  .header__text .header__btn {
+    top: 72%;
+  }
+  .header__text .aboutus-cta {
+    top: 72%;
+    left: 240px;
+    z-index: 1000;
   }
 }
 @media (min-width: 1089px) {
@@ -901,10 +858,28 @@ main .faq .arrow-rotated {
     height: 80vh;
   }
   .header__text {
-    display: none;
-  }
-  .header .text-pc {
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
     display: flex;
+    align-items: flex-start;
+    height: 80%;
+  }
+  .header__text h1 {
+    font-size: 5.4rem;
+    margin-bottom: 0.6em;
+  }
+  .header__text p {
+    margin-top: 0.2em;
+    font-size: 1.8rem;
+  }
+  .header__text .header__btn {
+    top: 72%;
+  }
+  .header__text .aboutus-cta {
+    top: 72%;
+    left: 240px;
+    z-index: 1000;
   }
   .header .people {
     display: flex;
