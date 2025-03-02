@@ -486,12 +486,12 @@ main {
 	background-color: #ccc;
 	&__logo {
 		width: 40%;
-		height: 90%;
+		height: 50%;
 	}
 	&__contact {
 		position: absolute;
 		top: 30%;
-		left: 60%;
+		left: 65%;
 		color: $text-color;
 		p {
 			font-size: 2.2rem;
@@ -524,19 +524,21 @@ main {
 	}
 	.title {
 		font-family: $title-font, sans-serif;
-		font-size: 2.3rem;
+		font-size: 2.4rem;
+		font-weight: bold;
 		text-align: center;
 		margin-top: 8px;
 	}
 	.price {
-		font-size: 2.4rem;
+		font-size: 1.8rem;
 		font-weight: bold;
 		margin-top: 16px;
 		text-align: center;
 	}
 	.caution {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 		margin-top: 12px;
+		margin-bottom: 8px;
 		text-align: center;
 	}
 	.contact-btn {
@@ -558,7 +560,7 @@ main {
 		font-weight: bold;
 		font-size: 2.4rem;
 		text-align: center;
-		margin-top: 20px;
+		margin-top: 42px;
 		margin-bottom: 12px;
 	}
 	.description {
@@ -901,6 +903,87 @@ main {
 					font-size: 1.8rem;
 				}
 			}
+		}
+	}
+	.card-site {
+		.equipment {
+			margin-top: 100px;
+			margin-left: 30px;
+			width: 40vw;
+			height: 60vh;
+			border-radius: 15px;
+		}
+		.title {
+			position: absolute;
+			top: 17%;
+			left: 65%;
+			font-family: $title-font, sans-serif;
+			font-size: 4rem;
+			text-align: center;
+			margin-top: 8px;
+		
+		}
+		.price {
+			font-size: 2.4rem;
+			font-weight: bold;
+			margin-top: 16px;
+			text-align: center;
+		}
+		.one-five{
+			position: absolute;
+			top: 27%;
+			left: 65%;
+		}
+		.six-ten{
+			position: absolute;
+			top: 32%;
+			left: 65%;
+		}
+		.upper-eleven{
+			position: absolute;
+			top: 37%;
+			left: 65%;
+		}
+		.caution {
+			position: absolute;
+			top: 42%;
+			left: 65%;
+			font-size: 2rem;
+			margin-top: 24px;
+			padding-bottom: 25px;
+			text-align: center;
+		}
+		.contact-btn {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 65%;
+			font-size: 2.2rem;
+			font-weight: bold;
+			padding: 0.5em 1em;
+			margin: 0 auto;
+			margin-top: 20px;
+			width: 20vw;
+			background-color: $main-color;
+			border: 4px solid $main-color;
+			border-radius: 10px;
+		}
+		.sms-btn {
+			position: absolute;
+			top: 59%;
+			left: 65%;
+			background-color: transparent;
+		}
+		.description-title {
+			font-weight: bold;
+			font-size: 3.6rem;
+			text-align: center;
+			margin-top: 10%;
+			margin-bottom: 12px;
+		}
+		.description {
+			text-align: center;
+			font-size: 1.8rem;
 		}
 	}
 }
