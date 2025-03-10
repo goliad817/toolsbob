@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -52,18 +53,18 @@
     <header class="header">
         <div class="wrapper">
             <div class="header__text">
-                <h1>Sprzęt budowlany i ogrodniczy,<br>wynajem i profesjonalne usługi<h1>
-                        <p>Wynajmij profesjonalny sprzęt budowlany i ogrodniczy, dopasowany do Twoich potrzeb.<br><br> Z nami każda praca
+                <h1 data-aos="fade-left "data-aos-delay="200">Sprzęt budowlany i ogrodniczy,<br>wynajem i profesjonalne usługi<h1>
+                        <p data-aos="fade-left "data-aos-delay="400">Wynajmij profesjonalny sprzęt budowlany i ogrodniczy, dopasowany do Twoich potrzeb.<br><br> Z nami każda praca
                             stanie się prostsza.
 
 
                         </p>
 
-                        <a href="#services" class="header__btn aboutus-cta ">zobacz nasze usługi</a>
-                        <a href="./cała-oferta.html" class="header__btn offers-cta ">zobacz naszą ofertę</a>
+                        <a data-aos="fade-down "data-aos-delay="600" href="#services" class="header__btn aboutus-cta ">zobacz nasze usługi</a>
+                        <a data-aos="fade-down "data-aos-delay="600" href="./cała-oferta.html" class="header__btn offers-cta ">zobacz naszą ofertę</a>
             </div>
             <div class="people wrapper ">
-                <div class="people__img ">
+                <div data-aos="fade-right "data-aos-delay="800" class="people__img ">
                     <img class="men" src="./img/men.webp"
                         alt="uśmiechnięty męszczyzna w kasku patrzący się w strone tekstu">
                 </div>
@@ -87,37 +88,37 @@
                 <h2>Co nas wyróżnia?</h2>
             </div>
             <div class="wrapper">
-                <div class="about-us__box">
-                    <i class="ti ti-coin about-us__icon"></i>
+                <div data-aos="fade-up "data-aos-delay="100" class="about-us__box">
+                    <i  class="ti ti-coin about-us__icon"></i>
                     <h2 class="about-us__heading">Najlepsze ceny</h2>
                     <p class="about-us__text">Korzystne stawki dostosowane do Twojego budżetu. Wynajmuj bez
                         przepłacania!</p>
                 </div>
 
-                <div class="about-us__box">
-                    <i class="ti ti-pick about-us__icon"></i>
+                <div data-aos="fade-up "data-aos-delay="200" class="about-us__box">
+                    <i  class="ti ti-pick about-us__icon"></i>
                     <h2 class="about-us__heading"> Sprzęt najwyższej jakości</h2>
                     <p class="about-us__text">Nowoczesne, sprawdzone urządzenia gotowe do intensywnej pracy w każdych
                         warunkach.</p>
                 </div>
-                <div class="about-us__box">
+                <div  data-aos="fade-up "data-aos-delay="300" class="about-us__box">
                     <i class="ti ti-bolt about-us__icon"></i>
                     <h2 class="about-us__heading"> Szybki wynajem</h2>
                     <p class="about-us__text">Minimum formalności, maksimum wygody. Odbierz sprzęt, gdy tylko go
                         potrzebujesz!</p>
                 </div>
-                <div class="about-us__box">
+                <div data-aos="fade-up "data-aos-delay="400" class="about-us__box">
                     <i class="fa-solid fa-wrench about-us__icon"></i>
                     <h2 class="about-us__heading"> Bezproblemowy serwis</h2>
                     <p class="about-us__text">W razie awarii szybko reagujemy i zapewniamy wsparcie techniczne</p>
                 </div>
-                <div class="about-us__box">
-                    <i class="ti ti-calendar-check about-us__icon"></i>
+                <div data-aos="fade-up "data-aos-delay="500" class="about-us__box">
+                    <i  class="ti ti-calendar-check about-us__icon"></i>
                     <h2 class="about-us__heading">Elastyczne warunki wynajmu</h2>
                     <p class="about-us__text">Dostosuj czas i warunki wynajmu do swojego projektu — pełna swoboda!</p>
                 </div>
-                <div class="about-us__box">
-                    <i class="fa-solid fa-shield-halved about-us__icon"></i>
+                <div data-aos="fade-up "data-aos-delay="600" class="about-us__box">
+                    <i  class="fa-solid fa-shield-halved about-us__icon"></i>
                     <h2 class="about-us__heading"> Bezpieczny sprzęt</h2>
                     <p class="about-us__text">Regularnie serwisowane i sprawdzane urządzenia, które spełniają najwyższe
                         standardy bezpieczeństwa.</p>
@@ -323,8 +324,14 @@
     </footer>
    
 
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            offset: 200,
+            once: true,       
+        });
+      </script>
     <script src="./js/script.js"></script>
 </body>
 
