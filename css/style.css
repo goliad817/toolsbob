@@ -635,7 +635,7 @@ main .faq .arrow-rotated {
 }
 
 .card-site .equipment {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 90vw;
   height: 50vh;
   border-radius: 15px;
@@ -648,7 +648,7 @@ main .faq .arrow-rotated {
   margin-top: 8px;
 }
 .card-site .price {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   margin-top: 16px;
   text-align: center;
@@ -696,8 +696,9 @@ main .faq .arrow-rotated {
   margin-bottom: 12px;
 }
 .card-site .description {
+  margin-top: 6%;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 @media (max-width: 767px) {
