@@ -51,9 +51,7 @@ body {
 		height: 80px;
 	}
 	&__logo-box {
-		flex: 0 0 auto;
 		display: flex;
-		align-items: center;
 		justify-content: flex-start;
 	}
 
@@ -68,8 +66,10 @@ body {
 
 	&__logo {
 		margin-top: 8px;
+		z-index: 1000;
 		img {
 			height: 28px;
+			z-index: 10000;
 		}
 	}
 
@@ -828,10 +828,10 @@ main {
 				font-size: 1.8rem;
 			}
 			.header__btn {
-				top: 72%;
+				top: 75%;
 			}
 			.aboutus-cta {
-				top: 72%;
+				top: 75%;
 				left: 240px;
 				z-index: 1000;
 			}
