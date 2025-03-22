@@ -252,8 +252,6 @@ body {
   color: #272727;
 }
 .nav__link--btn svg {
-  display: flex;
-  align-items: center;
   margin-left: 10px;
 }
 .nav .gps {
