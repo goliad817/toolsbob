@@ -376,19 +376,23 @@ main {
 				color: $main-color;
 			}
 		}
-		&__icon {
+		svg {
 			text-align: center;
-			font-size: 3.2rem;
+			width: 75px;
+			height: 75px;
+			margin-bottom: 7px;
 			text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
 		}
 		&__heading {
 			font-size: 1.8rem;
 			margin-top: 8px;
+			height: 20px;
 		}
 		&__text {
 			font-size: 1.4rem;
 			text-align: center;
 			padding: 8px 16px;
+			height: 100px;
 		}
 	}
 	.services {
@@ -653,6 +657,7 @@ main {
 				width: calc(50% - 10px); // Dwie kolumny z odstępem
 				max-width: 180px; // Dla bezpieczeństwa
 				height: 300px;
+				margin-bottom: 7%;
 
 				&__img {
 					height: 150px;
