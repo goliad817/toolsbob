@@ -69,9 +69,10 @@ body h1, body h2, body h3, body h4 {
 }
 .nav__logo {
   z-index: 1000;
+  margin-top: 23px;
 }
 .nav__logo img {
-  height: 28px;
+  height: 56px;
   z-index: 10000;
 }
 .nav__link {
