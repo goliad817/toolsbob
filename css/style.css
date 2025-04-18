@@ -12,13 +12,16 @@ html {
 }
 
 body {
-  font-family: "Mulish", sans-serif;
+  font-family: "Nunito", sans-serif;
   background-color: #eff1f3;
   color: #272727;
   overflow-x: hidden;
 }
-body h1, body h2, body h3, body h4 {
-  font-family: "Roboto Slab", sans-serif;
+body h1,
+body h2,
+body h3,
+body h4 {
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
 
@@ -67,13 +70,8 @@ body h1, body h2, body h3, body h4 {
   align-items: center;
   gap: 3em;
 }
-.nav__logo {
-  z-index: 1000;
-  margin-top: 23px;
-}
 .nav__logo img {
-  height: 56px;
-  z-index: 10000;
+  height: 30px;
 }
 .nav__link {
   position: relative;
@@ -116,9 +114,11 @@ body h1, body h2, body h3, body h4 {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
+  white-space: nowrap;
   border: 1px solid #fed766;
   border-radius: 10px;
   transition: color, background-color 0.5s;
+  z-index: 10000;
 }
 .nav__link--btn:hover {
   background-color: #fed766;
@@ -162,14 +162,28 @@ body h1, body h2, body h3, body h4 {
   color: #eff1f3;
   z-index: 1;
 }
+.header__text span {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #eff1f3;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 3px 3px rgba(255, 255, 255, 0.2);
+}
+.header__text span svg {
+  height: 22px;
+  width: 22px;
+  margin-right: 4px;
+}
 .header__text h1 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
+  text-shadow: 0 3px 3px rgba(255, 255, 255, 0.2);
 }
 .header__text p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-top: 1.4em;
   margin-bottom: 3em;
-  font-family: "Mulish";
+  text-shadow: 0 3px 3px rgba(255, 255, 255, 0.2);
 }
 .header__btn {
   position: absolute;
@@ -181,8 +195,10 @@ body h1, body h2, body h3, body h4 {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  white-space: nowrap;
   border: 4px solid #fed766;
   border-radius: 10px;
+  box-shadow: 0 3px 3px rgba(255, 255, 255, 0.2);
   transition: background-color, color 0.5s;
 }
 .header__btn:hover {
@@ -212,14 +228,15 @@ body h1, body h2, body h3, body h4 {
   z-index: 1;
 }
 .header .people__img .men {
-  height: 380px;
-  width: 380px;
+  height: 370px;
+  width: 330px;
 }
 
 main .section-title {
   position: relative;
   margin-top: 15%;
   margin-bottom: 5%;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: #272727;
   text-transform: uppercase;
@@ -253,9 +270,9 @@ main .offers .offers-box {
   color: #272727;
   width: 350px;
   height: 400px;
-  border: 1px solid #696773;
-  border-radius: 25px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
   cursor: pointer;
 }
@@ -265,8 +282,7 @@ main .offers .offers-box__img {
   width: 100%;
   height: 200px;
   background-color: #fff;
-  border-radius: 25px 25px 0 0;
-  border-bottom: 1px solid #696773;
+  border-radius: 10px 10px 0 0;
 }
 main .offers .offers-box__img img {
   width: 100%;
@@ -330,6 +346,7 @@ main .offers .see-more-box {
 main .offers .see-more-box .see-more-btn {
   background-color: #fed766;
   color: #272727;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   max-width: 1100px;
   width: 90%;
@@ -353,6 +370,8 @@ main .about-us__box {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
   padding: 10px;
   color: #272727;
   margin-bottom: 16px;
@@ -362,11 +381,10 @@ main .about-us__box:hover {
   color: #fed766;
 }
 main .about-us svg {
-  text-align: center;
   width: 75px;
   height: 75px;
   margin-bottom: 7px;
-  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.1));
 }
 main .about-us__heading {
   font-size: 1.8rem;
@@ -380,7 +398,9 @@ main .about-us__text {
   height: 100px;
 }
 main .services__text-box {
-  border: 1px solid #696773;
+  border: 1px solid #fff;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   list-style: none;
   padding-left: 20px;
 }
@@ -422,10 +442,8 @@ main .faq__dropdown {
   list-style: none;
 }
 main .faq__dropdown li {
-  border-bottom: 1px #696773 solid;
-}
-main .faq__dropdown li:first-child {
-  border-top: 1px #696773 solid;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 main .faq__dropdown p {
   color: #272727;
@@ -460,7 +478,8 @@ main .faq .a {
   overflow: hidden;
   height: 0;
   padding: 0 16px 0 52px;
-  background-color: #e7e9eb;
+  background-color: #eff1f3;
+  border-radius: 5px;
 }
 main .faq .a-opened {
   overflow: visible;
@@ -511,7 +530,7 @@ main .faq .arrow-rotated {
   margin-top: 50px;
   width: 90vw;
   height: 50vh;
-  border-radius: 15px;
+  border-radius: 10px;
   border: 4px solid #fff;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 }
@@ -520,9 +539,8 @@ main .faq .arrow-rotated {
   font-weight: bold;
   text-align: center;
   margin-top: 8px;
-  border: 4px solid #fff;
-  background-color: #fff;
-  border-radius: 15px;
+  border: 1px solid #fff;
+  border-radius: 10px;
   padding: 8px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 }
@@ -531,9 +549,8 @@ main .faq .arrow-rotated {
   font-weight: bold;
   margin-top: 16px;
   text-align: center;
-  border: 4px solid #fff;
-  background-color: #fff;
-  border-radius: 15px;
+  border: 1px solid #fff;
+  border-radius: 10px;
   padding: 8px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 }
@@ -542,9 +559,8 @@ main .faq .arrow-rotated {
   margin-top: 12px;
   margin-bottom: 8px;
   text-align: center;
-  border: 4px solid #fff;
-  background-color: #fff;
-  border-radius: 15px;
+  border: 1px solid #fff;
+  border-radius: 10px;
   padding: 8px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 }
@@ -562,6 +578,7 @@ main .faq .arrow-rotated {
   width: 60vw;
   background-color: #fed766;
   border: 4px solid #fed766;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   transition: background-color 0.3s;
 }
@@ -584,16 +601,14 @@ main .faq .arrow-rotated {
   text-align: center;
   margin-top: 42px;
   margin-bottom: 12px;
-  border: 4px solid #fff;
-  background-color: #fff;
-  border-radius: 15px;
+  border: 1px solid #fff;
+  border-radius: 10px;
   padding: 8px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 .card-site .description {
-  border: 4px solid #fff;
-  background-color: #fff;
-  border-radius: 15px;
+  border: 1px solid #fff;
+  border-radius: 10px;
   padding: 16px;
   margin-top: 6%;
   text-align: center;
@@ -834,12 +849,8 @@ main .faq .arrow-rotated {
   .nav .nav__box {
     display: flex;
   }
-  .nav__logo {
-    margin-top: 32px;
-  }
   .nav__logo img {
-    width: 240px;
-    height: 110px;
+    height: 48px;
   }
   .header__bg {
     height: 80vh;
@@ -855,9 +866,16 @@ main .faq .arrow-rotated {
     align-items: flex-start;
     height: 80%;
   }
+  .header__text span {
+    font-size: 1.8rem;
+  }
+  .header__text span svg {
+    height: 18px;
+    width: 18px;
+  }
   .header__text h1 {
     font-size: 5.4rem;
-    margin-bottom: 0.6em;
+    margin-bottom: 28px;
   }
   .header__text p {
     margin-top: 0.2em;
@@ -913,11 +931,11 @@ main .faq .arrow-rotated {
     margin-left: 30px;
     width: 40vw;
     height: 60vh;
-    border-radius: 15px;
+    border-radius: 10px;
   }
   .card-site .title {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 65%;
     font-size: 4rem;
     text-align: center;
@@ -926,7 +944,7 @@ main .faq .arrow-rotated {
   .card-site .price {
     position: absolute;
     left: 65%;
-    top: 35%;
+    top: 30%;
     font-size: 4.2rem;
     font-weight: bold;
     margin-top: 16px;
@@ -934,7 +952,7 @@ main .faq .arrow-rotated {
   }
   .card-site .caution {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 65%;
     font-size: 2.4rem;
     margin-top: 24px;
@@ -944,7 +962,7 @@ main .faq .arrow-rotated {
   .card-site .contact-btn {
     display: none;
     position: absolute;
-    top: 57%;
+    top: 54%;
     left: 65%;
     font-size: 2.2rem;
     font-weight: bold;
@@ -959,7 +977,7 @@ main .faq .arrow-rotated {
   .card-site .location-btn {
     display: block;
     position: absolute;
-    top: 67%;
+    top: 64%;
     left: 65%;
     background-color: transparent;
   }
